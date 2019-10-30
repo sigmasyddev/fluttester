@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:fluttester/listTileBasic.dart';
 
+import 'listTileAdvanced.dart';
+
 class MainPage extends StatefulWidget {
   @override
   MainPageState createState() => MainPageState();
 }
 
-/** Esta pagina permite manejar los enlaces a los diferentes ejemplos */
+/// Esta pagina permite manejar los enlaces a los diferentes ejemplos
 class MainPageState extends State<MainPage>{
   @override
   Widget build(BuildContext context) {
@@ -36,7 +38,7 @@ class MainPageState extends State<MainPage>{
           ),
           InkWell(
             onTap: ()=>{
-              Navigator.push(context,MaterialPageRoute(builder: (context) => HomePage()))
+              Navigator.push(context,MaterialPageRoute(builder: (context) => ListTileadvanced()))
             },
             child: Card(
               margin: EdgeInsets.only(top: 10, bottom: 10, left: 20, right: 20),
