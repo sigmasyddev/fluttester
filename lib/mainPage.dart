@@ -16,10 +16,7 @@ class MainPageState extends State<MainPage>{
         children: <Widget>[
           InkWell(
             onTap: ()=>{
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => HomePage()),
-              )
+              Navigator.push(context,MaterialPageRoute(builder: (context) => HomePage()))
             },
             child: Card(
               margin: EdgeInsets.only(top: 10, bottom: 10, left: 20, right: 20),
@@ -29,7 +26,7 @@ class MainPageState extends State<MainPage>{
                 child: Text(
                   "ListTile basic: [using Cards]",
                   style: TextStyle(
-                    color: Colors.black54,
+                    color: Colors.blueGrey,
                     fontWeight: FontWeight.bold
                   )
                 )
@@ -46,7 +43,7 @@ class MainPageState extends State<MainPage>{
                 child: Text(
                   "ListTile advanced: [using custom design]",
                   style: TextStyle(
-                    color: Colors.black54,
+                    color: Colors.blueGrey,
                     fontWeight: FontWeight.bold
                   )
                 )
@@ -63,7 +60,7 @@ class MainPageState extends State<MainPage>{
                 child: Text(
                   "ListTile advanced",
                   style: TextStyle(
-                    color: Colors.black54,
+                    color: Colors.blueGrey,
                     fontWeight: FontWeight.bold
                   )
                 ),
