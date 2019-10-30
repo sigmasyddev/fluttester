@@ -6,6 +6,7 @@ class MainPage extends StatefulWidget {
   MainPageState createState() => MainPageState();
 }
 
+/** Esta pagina permite manejar los enlaces a los diferentes ejemplos */
 class MainPageState extends State<MainPage>{
   @override
   Widget build(BuildContext context) {
