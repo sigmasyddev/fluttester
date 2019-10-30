@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttester/homePage.dart';
 
 class MainPage extends StatefulWidget {
   @override
@@ -13,7 +14,12 @@ class MainPageState extends State<MainPage>{
       body: ListView(
         children: <Widget>[
           InkWell(
-            onTap: _tapped,
+            onTap: ()=>{
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => HomePage()),
+              )
+            },
             child: Card(
               margin: EdgeInsets.only(top: 10, bottom: 10, left: 20, right: 20),
               elevation: 10,
