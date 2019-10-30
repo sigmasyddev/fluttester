@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fluttester/homePage.dart';
+import 'package:fluttester/listTileBasic.dart';
 
 class MainPage extends StatefulWidget {
   @override
@@ -16,13 +16,13 @@ class MainPageState extends State<MainPage>{
         children: <Widget>[
           InkWell(
             onTap: ()=>{
-              Navigator.push(context,MaterialPageRoute(builder: (context) => HomePage()))
+              Navigator.push(context,MaterialPageRoute(builder: (context) => ListTileBasic()))
             },
             child: Card(
               margin: EdgeInsets.only(top: 10, bottom: 10, left: 20, right: 20),
               elevation: 10,
               child: Padding(
-                padding: EdgeInsets.all(15),
+                padding: EdgeInsets.all(50),
                 child: Text(
                   "ListTile basic: [using Cards]",
                   style: TextStyle(
@@ -34,7 +34,9 @@ class MainPageState extends State<MainPage>{
             )
           ),
           InkWell(
-            onTap: _tapped,
+            onTap: ()=>{
+              Navigator.push(context,MaterialPageRoute(builder: (context) => HomePage()))
+            },
             child: Card(
               margin: EdgeInsets.only(top: 10, bottom: 10, left: 20, right: 20),
               elevation: 10,
