@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:fluttester/homePage.dart';
+//import 'package:fluttester/homePage.dart';
 
-import 'myhomepage.dart';
+import 'mainPage.dart';
+
+//import 'myhomepage.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,7 +16,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       //home: MyHomePage(title: 'Flutter Demo Home Page'),
-      home: HomePage()
+      //home: HomePage()
+      home: MainPage()
     );
   }
 }
