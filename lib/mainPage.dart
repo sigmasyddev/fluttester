@@ -49,6 +49,20 @@ class MainPage extends StatelessWidget{
               ),
             )
           ),
+          Card(
+            margin: EdgeInsets.only(top: 10, bottom: 10, left: 20, right: 20),
+            elevation: 10,
+            child: Padding(
+              padding: EdgeInsets.all(15),
+              child: Text(
+                "ListTile advanced 2",
+                style: TextStyle(
+                  color: Colors.black54,
+                  fontWeight: FontWeight.bold
+                )
+              ),
+            )
+          ),
         ],
       )
     );
