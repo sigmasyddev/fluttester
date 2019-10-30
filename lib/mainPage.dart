@@ -11,6 +11,7 @@ class MainPageState extends State<MainPage>{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("FLUTTESTER")),
+      backgroundColor: Colors.blueGrey,
       body: ListView(
         children: <Widget>[
           InkWell(
